@@ -3,7 +3,6 @@ package com.zhaiyz.databasetest;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 /**
  * Created by zhaiyz on 17-6-4.
@@ -35,7 +34,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_BOOK);
         db.execSQL(CREATE_CATEGORY);
-        Toast.makeText(mContext, "Created succeeded", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, "Created succeeded", Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhaiyz.databasetest">
+    package="com.zhaiyz.notificationtest">
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name=".DatabaseProvider"
-            android:authorities="com.zhaiyz.databasetest.provider"
-            android:enabled="true"
-            android:exported="true"></provider>
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>
